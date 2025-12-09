@@ -1,0 +1,8 @@
+for para in $*
+do
+    if [[ $para == --SEQ=* ]];then
+        SEQ=${para#*=}
+    elif [[ $para == --L=* ]];then
+        L=${para#*=}
+    fi
+done
